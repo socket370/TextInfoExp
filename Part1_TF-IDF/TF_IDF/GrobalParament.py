@@ -16,8 +16,8 @@ PreprocessResultName="pro_res.txt"                               #预处理文�
 ResultFileNameDir="title_and_abs"  #搜索结果文件目录
 ResultFileName="result.txt"                                      #搜索结果文件名
 
-path = 'C:/Users/kaifun/Desktop/ass_TIP/TextInfoExp/Part3_Text_Cluster/data/computer/'  # 原始数据
-# path1 = 'C:/Users/kaifun/Desktop/ass_TIP/TextInfoProcess/Test_one_TF-IDF/data_afterprocess/title_and_abs/'  # 处理后的标题和摘要
-path1 = 'C:/Users/kaifun/Desktop/ass_TIP/TextInfoExp/Part3_Text_Cluster/res_temp/'
-newpath='C:/Users/kaifun/Desktop/ass_TIP/TextInfoExp/Part3_Text_Cluster/data_afterprocess/pro_keyword/'
-newpath2='C:/Users/kaifun/Desktop/ass_TIP/TextInfoExp/Part3_Text_Cluster/data_afterprocess/keyword/'
+path = 'C:/Users/Administrator/PycharmProjects/TextInfoExp/Part1_TF-IDF/data/computer/'  # 原始数据
+path1 = 'C:/Users/Administrator/PycharmProjects/TextInfoExp/Part1_TF-IDF/data/title_and_abs/'  # 处理后的标题和摘要
+# path1 = 'C:/Users/kaifun/Desktop/ass_TIP/TextInfoExp/Part3_Text_Cluster/res_temp/'
+# newpath='C:/Users/kaifun/Desktop/ass_TIP/TextInfoExp/Part3_Text_Cluster/data_afterprocess/pro_keyword/'
+# newpath2='C:/Users/kaifun/Desktop/ass_TIP/TextInfoExp/Part3_Text_Cluster/data_afterprocess/keyword/'

@@ -5,7 +5,9 @@ Created on 2014-10-26
 '''
 import re
 from jieba import cut
-from TF_IDF import GrobalParament
+import GrobalParament
+
+
 def fullcut(content):
     cut_content = cut(content, cut_all=False)
     word_list_temp=list(cut_content)

@@ -90,5 +90,5 @@ def tfidf_sklearn():
 
 if __name__ == '__main__':
     get_text()
-    # get_keyword()
+    get_keyword()
     # tfidf_sklearn()

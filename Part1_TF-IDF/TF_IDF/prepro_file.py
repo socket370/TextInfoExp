@@ -3,7 +3,7 @@
 # 这个函数用于预处理文件处理过程中采用unicode编码
 import os
 from str_replace import str_replace
-from TF_IDF.StrToUni import StrToUni
+from StrToUni import StrToUni
 import GrobalParament
 from full_word_cut import fullcut
 from half_word_cut import halfcut

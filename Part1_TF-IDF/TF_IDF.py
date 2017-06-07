@@ -4,7 +4,7 @@ from __future__ import division
 from TF_IDF import GrobalParament
 from TF_IDF.prepro_file import prepro_file
 import math
-
+import os
 
 def TF_IDF_Compute(file_import_url_temp):
     file_import_url = file_import_url_temp.replace('\\', '/')
@@ -40,7 +40,7 @@ def TF_IDF_Compute(file_import_url_temp):
     data_source.close()
 
     newpath2 = GrobalParament.newpath2
-    # filelist = os.listdir(newpath2)  # 取得当前路径下的所有文件
+    filelist = os.listdir(newpath2)  # 取得当前路径下的所有文件
     TF_IDF_last_result = []
     if (word_in_afile_stat) and (word_in_allfiles_stat) and (files_num != 0):
         for filename in word_in_afile_stat.keys():
@@ -53,13 +53,13 @@ def TF_IDF_Compute(file_import_url_temp):
                 TF_IDF_result[word] = ((word_n / word_sum)) * (math.log10(files_num / with_word_sum))
 
             result_temp = sorted(TF_IDF_result.iteritems(), key=lambda x: x[1], reverse=True)
-            # f1 = open(newpath2 + filename, "r")
+            f1 = open(newpath2 + filename, "r")
 
-            # line = f1.readline()
+            line = f1.readline()
             TF_IDF_last_result.append(filename)
             TF_IDF_last_result.extend(result_temp[0:10])
 
-            # TF_IDF_last_result.append(line)
+            TF_IDF_last_result.append(line)
             TF_IDF_last_result.append('\n')
 
     f = open("results.txt", "a+")
@@ -75,4 +75,4 @@ def TF_IDF_Compute(file_import_url_temp):
 if __name__ == '__main__':
     PreResUrl = 'data' + '/' + "pro_res.txt"
     prepro_file(GrobalParament.path1, PreResUrl)  # 将所有文本分词，结果汇总到pro_res.txt
-    TF_IDF_Compute(PreResUrl)  # 获得TF_IDF结果
+    # TF_IDF_Compute(PreResUrl)  # 获得TF_IDF结果
